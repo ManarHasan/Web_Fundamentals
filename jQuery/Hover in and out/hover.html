@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+            $('img').hover(function(){
+			$(this).attr('src', 'hover.jpg');
+			}, function(){
+				$(this).attr('src', 'amazing.jpg');
+			});
+
+            });
+        </script>
+        <style>
+            div{
+                display: flex;
+
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        <body>
+
+            <h1>Hover In/Out</h1>
+            <div>
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+            </div>
+
+            <div>
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+                <img src="amazing.jpg" alt="hover.jpg">
+            </div>
+        </body>
+    </head>
+</html>

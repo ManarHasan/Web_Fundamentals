@@ -1,0 +1,14 @@
+Lead Gen Business:
+
+1. SELECT SUM(billing.amount) FROM billing WHERE billing.charged_datetime > '2012-02-29' and billing.charged_datetime < '2012-04-01';
+2. SELECT SUM(billing.amount) FROM clients, billing WHERE clients.client_id = billing.client_id and clients.client_id = 2;
+3. SELECT sites.domain_name, clients.first_name, clients.last_name FROM clients, sites WHERE clients.client_id = sites.client_id and clients.client_id = 10;
+4. SELECT COUNT(sites.domain_name), sites.created_datetime FROM clients, sites WHERE clients.client_id = sites.client_id and clients.client_id = 1 GROUP BY sites.created_datetime;
+   SELECT COUNT(sites.domain_name), sites.created_datetime FROM clients, sites WHERE clients.client_id = sites.client_id and clients.client_id = 20 GROUP BY sites.created_datetime;
+5. SELECT sites.domain_name, COUNT(leads.leads_id) AS number_of_leads FROM sites, leads WHERE sites.site_id = leads.site_id  AND leads.registered_datetime BETWEEN "2011-01-01%" AND "2011-02-15%" GROUP BY sites.domain_name;
+6. SELECT CONCAT(clients.first_name, ' ', clients.last_name), COUNT(leads.leads_id) FROM clients, sites, leads WHERE sites.client_id = clients.client_id AND sites.site_id = leads.site_id AND leads.registered_datetime BETWEEN "2011-01-01%" AND "2011-12-31%" GROUP BY clients.first_name;
+7. SELECT CONCAT(clients.first_name, ' ', clients.last_name), COUNT(leads.leads_id), DATE_FORMAT(leads.registered_datetime, "%M") FROM clients, sites, leads WHERE sites.client_id = clients.client_id AND sites.site_id = leads.site_id AND leads.registered_datetime BETWEEN "2011-01-01%" AND "2011-06-30%" GROUP BY leads.registered_datetime, clients.first_name ORDER BY DATE_FORMAT(leads.registered_datetime, "%m").
+8. SELECT CONCAT(clients.first_name, ' ', clients.last_name), sites.domain_name, COUNT(leads.leads_id) FROM clients, sites, leads WHERE sites.client_id = clients.client_id AND sites.site_id = leads.site_id AND leads.registered_datetime GROUP BY sites.domain_name ORDER BY clients.client_id;
+9. SELECT CONCAT(clients.first_name, ' ', clients.last_name), SUM(billing.amount), DATE_FORMAT(billing.charged_datetime, "%m") AS month, DATE_FORMAT(billing.charged_datetime, "%Y") AS year FROM clients, billing WHERE billing.client_id = clients.client_id GROUP BY month, year ORDER BY year;
+   SELECT CONCAT(clients.first_name, ' ', clients.last_name) AS client_name, SUM(billing.amount) AS total_revenue, DATE_FORMAT(billing.charged_datetime, "%M") AS month, DATE_FORMAT(billing.charged_datetime, "%Y") AS year FROM clients, billing WHERE billing.client_id = clients.client_id GROUP BY month, year ORDER BY year;
+10.SELECT CONCAT(clients.first_name, ' ', clients.last_name) AS client_name, GROUP_CONCAT(' ', sites.domain_name) AS sites FROM clients, sites WHERE sites.client_id = clients.client_id GROUP BY clients.client_id ORDER BY clients.client_id;

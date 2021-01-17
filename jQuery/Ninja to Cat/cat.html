@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+
+                $('img').click(function() {
+                $(this).attr("src",' ');
+                });
+
+
+            });
+
+        </script>
+        <style>
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+            }
+        </style>
+        <body>
+            <div>
+
+                <img src="ninja0.png" onerror="this.src='cat0.png';"> 
+                <img src='ninja1.png' onerror="this.src='cat1.png';"> 
+                <img src="ninja2.png" onerror="this.src='cat2.png';"> 
+                <img src="ninja3.png" onerror="this.src='cat3.png';"> 
+                <img src="ninja4.png" onerror="this.src='cat4.png';"> 
+
+            </div>
+        </body>
+
+    </head>
+</html>

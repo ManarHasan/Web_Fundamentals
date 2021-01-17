@@ -1,0 +1,30 @@
+HP@HP-PC MINGW64 ~
+$ cd Desktop
+
+HP@HP-PC MINGW64 ~/Desktop
+$ mkdir test
+
+HP@HP-PC MINGW64 ~/Desktop
+$ cd test
+
+HP@HP-PC MINGW64 ~/Desktop/test
+$ touch index.html
+
+HP@HP-PC MINGW64 ~/Desktop/test
+$ touch style.css
+
+HP@HP-PC MINGW64 ~/Desktop/test
+$ cp index.html index_2.html
+
+HP@HP-PC MINGW64 ~/Desktop/test
+$ cd ..
+
+HP@HP-PC MINGW64 ~/Desktop
+$ mkdir destination
+
+HP@HP-PC MINGW64 ~/Desktop
+$ cd test
+
+HP@HP-PC MINGW64 ~/Desktop/test
+$ mv index_2.html destination
+

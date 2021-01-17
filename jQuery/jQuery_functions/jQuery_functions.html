@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        
+        $(document).ready(function(){
+
+            $('.class').click(function(){
+                $(this).addClass('test');
+            })
+
+            $('.slidetoggle').click(function(){
+                $("p").slideToggle();
+            })
+
+            $('.append').click(function(){
+                $(this).append("Add text.");
+            })
+
+            $('.hide').click(function(){
+                $(this).hide();
+            })
+
+            $('.show').click(function(){
+                $('.hide').show();
+            })
+
+            $('.toggle').click(function(){
+                $('.toggled').toggle();
+            })
+
+            $('.slidedown').click(function(){
+                $('p').slideDown();
+            })
+
+            $('.slideup').click(function(){
+                $('p').slideUp();
+            })
+            
+            $('.fadein').click(function(){
+                $('p').fadeIn();
+            })
+
+            $('.fadeout').click(function(){
+                $('p').fadeOut();
+            })
+
+            $('.before').click(function(){
+                $('p').before("hello");
+            })
+            
+            $('.after').click(function(){
+                $('p').after("<button>wow</button>");
+            })
+
+            $('.html').click(function(){
+                $("p").html("<table><td>hello</td><td>yo</td<</table>");
+            })
+
+            $('.attr').click(function(){
+                $("img").attr("width", "50");
+            })
+            
+            $('.value').click(function(){
+                $("input:text").val("Manar Rocks!");
+            })
+
+            $('.text').click(function(){
+                $(this).text("new text");
+            })
+
+        });
+        
+        </script>
+        <style type="text/css">
+        
+        .test{
+            background-color: blue;
+            padding: 50px;
+            color: white;
+            margin-left: 50px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <h1>AddClass</h1>
+        <p>Click the button to add class</p>
+        <button class="class">AddClass</button>
+        <hr>
+        <h1>Slidetoggle</h1>
+        <p>Click the button to slidetoggle a hidden image</p>
+        <button class="slidetoggle">Slidetoggle</button>
+        <hr>
+        <h1>Append</h1>
+        <p>Click the button to add append a new paragraph!</p>
+        <button class="append">Append</button>
+        <hr>
+        <h1>Hide</h1>
+        <p>Click the button to hide an element</p>
+        <button class="hide">Hide</button>
+        <hr>
+        <h1>Show</h1>
+        <p>Click the button to show a hidden element</p>
+        <button class="show">Show</button>
+        <hr>
+        <h1>Toggle</h1>
+        <p>Click the button to toggle an element</p>
+        <button class="toggle">Toggle</button>
+        <button class="toggled">Hide me!</button>
+        <hr>
+        <h1>SlideUp</h1>
+        <p>Click the button to slide up</p>
+        <button class="slideup">SlideUp</button>
+        <hr>
+        <h1>SlideDown</h1>
+        <p>Click the button to slideDown</p>
+        <button class="slidedown">Slidedown</button>
+        <hr>
+        <h1>FadeOut</h1>
+        <p>Click the button to fade out</p>
+        <button class="fadeout">FadeOut</button>
+        <hr>
+        <h1>FadeIn</h1>
+        <p>Click the button to fade in</p>
+        <button class="fadein">FadeIn</button>
+        <hr>
+        <h1>Before</h1>
+        <p>Click the button to add before</p>
+        <button class="before">Before</button>
+        <hr>
+        <h1>After</h1>
+        <p>Click the button to add after</p>
+        <button class="after">After</button>
+        <hr>
+        <h1>HTML</h1>
+        <p>Click the button to change HTML</p>
+        <button class="html">HTML</button>
+        <hr>
+        <h1>Attribute</h1>
+        <p>Click the button to add an attribute</p>
+        <button class="attr">Attribute</button>
+        <img src="test.png">
+        <hr>
+        <h1>Value</h1>
+        <p>Click the button to add a value</p>
+        <input type="text" name="user">
+        <button class="value">Value</button>
+        <hr>
+        <h1>Text</h1>
+        <p>Click the button to add text</p>
+        <button class="text">Text</button>
+        <hr>
+
+    </body>
+</html>

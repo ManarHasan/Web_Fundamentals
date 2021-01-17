@@ -1,0 +1,46 @@
+15/15 correct.
+
+1. 35 --> correct answer: 35
+2. 8 --> correct answer: 8
+3. 6 --> correct answer: 6
+4. 3 --> correct answer: 3
+   9    		 9
+5. 40 --> correct answer: 40
+6. 4 --> correct answer: 4
+7. 10,3 --> correct answer: 10,3
+   30			    30
+8. 3 --> correct answer: 3
+   4			 4
+9. 2 --> correct answer: 2
+   5			 5
+   8			 8
+   11			 11
+10.0 --> correct answer: 0
+   1			 1
+   2			 2
+   3			 3
+   4			 4
+   5			 5
+   6			 6
+   7			 7
+   8			 8
+   9 			 9
+   0			 0
+   1			 1
+   2			 2
+   3			 3
+   4			 4
+   5			 5
+   6			 6
+   7			 7
+   8			 8
+   9			 9
+   0			 0
+11. nothing will be printed because the function is not called. --> correct answer: nothing will be printed because the function is not called.
+12. nothing will be printed because the function is not called. --> correct answer: nothing will be printed because the function is not called.
+13. 10 --> correct answer: 10
+14. 15 --> correct answer: 15
+    10			   10
+15. 15 --> correct answer: 15
+    15			   15
+

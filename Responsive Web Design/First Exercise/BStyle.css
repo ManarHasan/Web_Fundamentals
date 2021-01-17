@@ -1,0 +1,22 @@
+div {
+  display: inline-block;
+  height: 150px;
+  width: 20%;
+  background-color: red;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 480px) {
+  div {
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 481px) {
+  div {
+    background-color: orange;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div {
+    background-color: purple;
+  }
+}
